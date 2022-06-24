@@ -12,7 +12,7 @@
         <label>
             タイトル
         </label>
-        <input class="form-control" name="tilte">
+        <input class="form-control" name="title">
         <label>
             本文
         </label>
@@ -22,19 +22,13 @@
         </label>
         <select class="form-control" name="rate">
             <option value="0">0 (最低)</option>
-            <option value="0">1</option>
-            <option value="0">2</option>
-            <option value="0">3 (普通)</option>
-            <option value="0">4</option>
-            <option value="0">5 (最高)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3 (普通)</option>
+            <option value="4">4</option>
+            <option value="5">5 (最高)</option>
         </select>
         <input type="hidden" name='book' value="{{ book.id }}">
         <button type="submit" class="btn btn-success mt-4">投稿する</button>
     </form>
-    <p>実行結果</p>
-    <p>{{ post_book_title }}</p>
-    <p>{{ post_text }}</p>
-    <p>{{ post_rate }}</p>
-    <p>{{ post_book_id }}</p>
-    <p>{{ post_user_id }}</p>
 {% endblock %}
